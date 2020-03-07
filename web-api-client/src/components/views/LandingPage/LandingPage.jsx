@@ -150,13 +150,13 @@ function LandingPage() {
             {/* Filter  */}
 
             <Row gutter={[16, 30]}>
-                <Col lg={12} xs={24} >
+                <Col lg={11} xs={25} >
                     <CheckBox
                         list={continents}
                         handleFilters={filters => handleFilters(filters, "continents")}
                     />
                 </Col>
-                <Col lg={12} xs={24}>
+                <Col lg={13} xs={25}>
                     <RadioBox
                         list={price}
                         handleFilters={filters => handleFilters(filters, "price")}
