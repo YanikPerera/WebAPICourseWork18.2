@@ -12,14 +12,16 @@ import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
 
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore);
+//let store = createStoreWithMiddleware( Reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
     <Provider
-        store={createStoreWithMiddleware(
-            Reducer,
-            window.__REDUX_DEVTOOLS_EXTENSION__ &&
-            window.__REDUX_DEVTOOLS_EXTENSION__()
-        )}
+       // store={store}
+       store={createStoreWithMiddleware(
+        Reducer,
+        window.__REDUX_DEVTOOLS_EXTENSION__ &&
+        window.__REDUX_DEVTOOLS_EXTENSION__()
+    )}
     >
         <BrowserRouter>
             <App />

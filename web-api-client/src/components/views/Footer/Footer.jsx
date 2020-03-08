@@ -7,7 +7,7 @@ function Footer() {
             flexDirection: 'column', alignItems: 'center',
             justifyContent: 'center', fontSize:'1rem'
         }}>
-           
+            <p> Online Shopping @2020 </p>
         </div>
     )
 }
