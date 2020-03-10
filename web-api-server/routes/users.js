@@ -10,6 +10,7 @@ const async = require('async');
 //=================================
 //             User
 //=================================
+///test
 
 router.get("/auth", auth, (req, res) => {
     res.status(200).json({
